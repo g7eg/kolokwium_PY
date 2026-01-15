@@ -4,6 +4,12 @@
         "vscode": {
             "extensions": ["ms-python.python", "bierner.markdown-emoji", "yzhang.markdown-all-in-one", "shd101wyy.markdown-preview-enhanced"],
             "settings": {
+                "python.terminal.focusAfterLaunch": true,
+                "terminal.integrated.focusAfterRun": "terminal",
+                "github.copilot.enable": {"*": false},
+                "chat.disableAIFeatures": true,
+                "chat.agent.enabled": false,
+                "chat.commandCenter.enabled": false,
                 "extensions.ignoreRecommendations": true,
                 "security.workspace.trust.enabled": false,
                 "extensions.autoCheckUpdates": false,
@@ -27,7 +33,6 @@
                     "**/.gitignore": true,
                     "**/.github": true,
                     "**/.img": true,
-                    "**/.ttp": true,
                     "**/.scripts": true,
                     "**/.temp": true,
                     "**/.pytest_cache": true,
