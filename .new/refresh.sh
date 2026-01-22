@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if grep -q "WYKONANO SZTUCZKE" .new/status.txt 2>/dev/null; then
-  echo "Sztuczka została już wykonana. Skrypt nie zostanie powtórzony."
+  echo "Sztuczka została już raz wykonana więc nie zostanie powtórzony."
   exit 0
 fi
 
