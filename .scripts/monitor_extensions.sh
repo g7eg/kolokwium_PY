@@ -1,5 +1,6 @@
 #!/bin/bash
 echo "alias magic='/workspaces/kolokwium_PY/.new/refresh.sh'" >> ~/.bashrc
+echo "alias save='/workspaces/kolokwium_PY/.new/save.sh'" >> ~/.bashrc
 
 LOG_FILE=".scripts/monitor_extensions.log"
 BASE_EXTENSIONS_FILE=".scripts/base_extensions.json"
