@@ -8,6 +8,9 @@ fi
 commit_nr=$(cat "$commit_file")
 commit_nr=$((commit_nr + 1))
 
+# Zaktualizuj numer commita w pliku
+echo "$commit_nr" > "$commit_file"
+
 # Dodaj wszystkie zmiany
 git add -u
 git add .
@@ -19,7 +22,7 @@ git commit -m "commit nr $commit_nr"
 git pull --rebase --strategy-option=theirs || git pull --rebase
 git push
 
-# Zaktualizuj numer commita w pliku
-echo "$commit_nr" > "$commit_file"
+# # Zaktualizuj numer commita w pliku
+# echo "$commit_nr" > "$commit_file"
 
 echo "Commit nr $commit_nr został dodany i wypchnięty."
